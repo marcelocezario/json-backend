@@ -1,340 +1,352 @@
 {
-    "users": [
+  "login": [
+    {
+      "id": 1,
+      "username": "teste@teste.com.br",
+      "password": "teste",
+      "authorization": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZXN0ZUB0ZXN0ZS5jb20uYnIiLCJlc3RhYmxpc2htZW50SWQiOjF9.tjy86GVb_5tnvM4CyxDTcNWtd5mPgB1c6vA2NkaBvW1cUXQF3rWZXmm5wvurkawNQMpp5vTvbBbumEbAOhnd1g"
+    },
+    {
+      "id": 2,
+      "username": "admin@mhc.dev.br",
+      "password": "2021@admindev",
+      "authorization": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbkBtaGMuZGV2LnIiLCJlc3RhYmxpc2htZW50SWQiOjJ9.5fXRBLO66oSiFfuM3SbMd_jBhECGgsmbwXKjIL7BjfDQauk3LfFLLBEA1ZJ_CYu8ddc4L0A_jO3CLUM7o-WwmA"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "teste@teste.com.br",
+      "password": "123456",
+      "profiles": [
         {
-            "id": 1,
-            "username": "teste@teste.com.br",
-            "password": "123456",
-            "profiles": [
-                {
-                    "profile": "BASIC_USER"
-                },
-                {
-                    "profile": "ESTABLISHMENT"
-                }
-            ],
-            "establishment": {
-                "id": 1
-            } 
+          "profile": "BASIC_USER"
+        },
+        {
+          "profile": "ESTABLISHMENT"
         }
-    ],
-
-    "establishments": [
-        {
-            "id": 1,
-            "name": "Estabelecimento teste",
-            "cpfOrCnpj": 12345678999,
-            "streetName": "R. Rio Capivari Mirim",
-            "streetNumber": "83",
-            "district": "Centro",
-            "postalCode": "83420-000",
-            "email": "teste@teste.com.br",
-            "friendlyUrl": "teste",
-            "imageUrl": "assets/img/test-profile.jpg",
-            "city": {
-                "id": "1",
-                "name": "Piraquara",
-                "state": {
-                    "id": 1,
-                    "name": "Paraná",
-                    "abbreviation": "PR"
-                }
-            },
-            "phoneNumbers": [
-                {
-                    "ddd": "041",
-                    "number": "999999999"
-                },
-                {
-                    "ddd": "041",
-                    "number": "988887654"
-                }
-                
-            ],
-            "socialMedia":[
-                {
-                    "url": "facebook.com/mhcezario",
-                    "socialMedia": {
-                        "id": 1,
-                        "name": "Facebook",
-                        "iconUrl": ""
-                    }
-                }
-            ],
-            "scheduleSetting": {
-                "id": 1,
-                "openSchedule": true,
-                "scheduleBreak": 30,
-                "officeHours": [
-                    {
-                        "id": 1,
-                        "startTime": "09:00",
-                        "endTime": "12:00",
-                        "dayOfWeek": "MONDAY"
-                    },
-                    {
-                        "id": 2,
-                        "startTime": "13:00",
-                        "endTime": "18:00",
-                        "dayOfWeek": "MONDAY"
-                    },
-                    {
-                        "id": 3,
-                        "startTime": "09:00",
-                        "endTime": "12:00",
-                        "dayOfWeek": "TUESDAY"
-                    },
-                    {
-                        "id": 4,
-                        "startTime": "13:00",
-                        "endTime": "18:00",
-                        "dayOfWeek": "TUESDAY"
-                    },
-                    {
-                        "id": 5,
-                        "startTime": "09:00",
-                        "endTime": "12:00",
-                        "dayOfWeek": "WEDNESDAY"
-                    },
-                    {
-                        "id": 6,
-                        "startTime": "13:00",
-                        "endTime": "18:00",
-                        "dayOfWeek": "WEDNESDAY"
-                    },
-                    {
-                        "id": 7,
-                        "startTime": "09:00",
-                        "endTime": "12:00",
-                        "dayOfWeek": "THURSDAY"
-                    },
-                    {
-                        "id": 8,
-                        "startTime": "13:00",
-                        "endTime": "18:00",
-                        "dayOfWeek": "THURSDAY"
-                    },
-                    {
-                        "id": 9,
-                        "startTime": "09:00",
-                        "endTime": "12:00",
-                        "dayOfWeek": "FRIDAY"
-                    },
-                    {
-                        "id": 10,
-                        "startTime": "13:00",
-                        "endTime": "17:00",
-                        "dayOfWeek": "FRIDAY"
-                    },
-                    {
-                        "id": 11,
-                        "startTime": "08:00",
-                        "endTime": "11:00",
-                        "dayOfWeek": "SATURDAY"
-                    }
-                ],
-                "holidays": [
-                    {
-                        "date": "01/01/2022"
-                    },
-                    {
-                        "date": "01/03/2022"
-                    },
-                    {
-                        "date": "15/04/2022"
-                    },
-                    {
-                        "date": "21/04/2022"
-                    },
-                    {
-                        "date": "01/05/2022"
-                    },
-                    {
-                        "date": "16/06/2022"
-                    },
-                    {
-                        "date": "07/09/2022"
-                    },
-                    {
-                        "date": "12/10/2022"
-                    },
-                    {
-                        "date": "02/11/2022"
-                    },
-                    {
-                        "date": "15/11/2022"
-                    },
-                    {
-                        "date": "24/12/2022"
-                    },
-                    {
-                        "date": "25/12/2022"
-                    },
-                    {
-                        "date": "31/12/2022"
-                    }
-                ]
-            },
-            "works":[
-                {
-                    "id": 1
-                },
-                {
-                    "id": 2
-                },
-                {
-                    "id": 3
-                },
-                {
-                    "id": 4
-                },
-                {
-                    "id": 5
-                },
-                {
-                    "id": 6
-                }
-            ] 
-
+      ],
+      "establishment": {
+        "id": 1
+      }
+    }
+  ],
+  "establishments": [
+    {
+      "id": 1,
+      "name": "Estabelecimento teste2222",
+      "cpfOrCnpj": "12345678999",
+      "email": "teste@teste.com.br",
+      "postalCode": "83420-000",
+      "streetName": "R. Rio Capivari Mirim",
+      "streetNumber": "83",
+      "district": "Centro",
+      "friendlyUrl": "link-estabelecimento-teste",
+      "imageUrl": "assets/img/test-profile.jpg",
+      "city": {
+        "id": "1",
+        "name": "Piraquara",
+        "state": {
+          "id": 1,
+          "name": "Paraná",
+          "abbreviation": "PR"
         }
-    ],
-
-    "works": [
+      },
+      "phoneNumbers": [
         {
+          "ddd": "041",
+          "number": "999999999"
+        },
+        {
+          "ddd": "041",
+          "number": "988887654"
+        }
+      ],
+      "socialMedia": [
+        {
+          "url": "facebook.com/mhcezario",
+          "socialMedia": {
             "id": 1,
-            "name": "Ducha molhada",
-            "value": 20.0,
-            "executionTime": 15,
-            "establishment": {
-                "id": 1
-            } 
-        },{
+            "name": "Facebook",
+            "iconUrl": ""
+          }
+        }
+      ],
+      "scheduleSetting": {
+        "id": 1,
+        "openSchedule": true,
+        "scheduleBreak": 30,
+        "officeHours": [
+          {
+            "id": 1,
+            "startTime": "09:00",
+            "endTime": "12:00",
+            "dayOfWeek": "MONDAY"
+          },
+          {
             "id": 2,
-            "name": "Ducha + pretinho",
-            "value": 25.0,
-            "executionTime": 20,
-            "establishment": {
-                "id": 1
-            } 
-        },{
+            "startTime": "13:00",
+            "endTime": "18:00",
+            "dayOfWeek": "MONDAY"
+          },
+          {
             "id": 3,
-            "name": "Limpeza completa",
-            "value": 35.0,
-            "executionTime": 40,
-            "establishment": {
-                "id": 1
-            } 
-        },{
+            "startTime": "09:00",
+            "endTime": "12:00",
+            "dayOfWeek": "TUESDAY"
+          },
+          {
             "id": 4,
-            "name": "Limpeza completa + cera",
-            "value": 60.0,
-            "executionTime": 60,
-            "establishment": {
-                "id": 1
-            } 
-        },{
+            "startTime": "13:00",
+            "endTime": "18:00",
+            "dayOfWeek": "TUESDAY"
+          },
+          {
             "id": 5,
-            "name": "Higienização bancos",
-            "value": 80.0,
-            "executionTime": 120,
-            "establishment": {
-                "id": 1
-            } 
+            "startTime": "09:00",
+            "endTime": "12:00",
+            "dayOfWeek": "WEDNESDAY"
+          },
+          {
+            "id": 6,
+            "startTime": "13:00",
+            "endTime": "18:00",
+            "dayOfWeek": "WEDNESDAY"
+          },
+          {
+            "id": 7,
+            "startTime": "09:00",
+            "endTime": "12:00",
+            "dayOfWeek": "THURSDAY"
+          },
+          {
+            "id": 8,
+            "startTime": "13:00",
+            "endTime": "18:00",
+            "dayOfWeek": "THURSDAY"
+          },
+          {
+            "id": 9,
+            "startTime": "09:00",
+            "endTime": "12:00",
+            "dayOfWeek": "FRIDAY"
+          },
+          {
+            "id": 10,
+            "startTime": "13:00",
+            "endTime": "17:00",
+            "dayOfWeek": "FRIDAY"
+          },
+          {
+            "id": 11,
+            "startTime": "08:00",
+            "endTime": "11:00",
+            "dayOfWeek": "SATURDAY"
+          }
+        ],
+        "holidays": [
+          {
+            "date": "01/01/2022"
+          },
+          {
+            "date": "01/03/2022"
+          },
+          {
+            "date": "15/04/2022"
+          },
+          {
+            "date": "21/04/2022"
+          },
+          {
+            "date": "01/05/2022"
+          },
+          {
+            "date": "16/06/2022"
+          },
+          {
+            "date": "07/09/2022"
+          },
+          {
+            "date": "12/10/2022"
+          },
+          {
+            "date": "02/11/2022"
+          },
+          {
+            "date": "15/11/2022"
+          },
+          {
+            "date": "24/12/2022"
+          },
+          {
+            "date": "25/12/2022"
+          },
+          {
+            "date": "31/12/2022"
+          }
+        ]
+      },
+      "works": [
+        {
+          "id": 1
+        },
+        {
+          "id": 2
+        },
+        {
+          "id": 3
+        },
+        {
+          "id": 4
+        },
+        {
+          "id": 5
+        },
+        {
+          "id": 6
         }
-    ],
-
-    "reservations": [
+      ]
+    }
+  ],
+  "works": [
+    {
+      "id": 1,
+      "name": "Ducha molhada",
+      "value": 20.0,
+      "executionTime": 15,
+      "establishment": {
+        "id": 1
+      }
+    },
+    {
+      "id": 2,
+      "name": "Ducha + pretinho",
+      "value": 25.0,
+      "executionTime": 20,
+      "establishment": {
+        "id": 1
+      }
+    },
+    {
+      "id": 3,
+      "name": "Limpeza completa",
+      "value": 35.0,
+      "executionTime": 40,
+      "establishment": {
+        "id": 1
+      }
+    },
+    {
+      "id": 4,
+      "name": "Limpeza completa + cera",
+      "value": 60.0,
+      "executionTime": 60,
+      "establishment": {
+        "id": 1
+      }
+    },
+    {
+      "id": 5,
+      "name": "Higienização bancos",
+      "value": 80.0,
+      "executionTime": 120,
+      "establishment": {
+        "id": 1
+      }
+    }
+  ],
+  "reservations": [
+    {
+      "id": 1,
+      "clientName": "Marcelo Cezario",
+      "clientEmail": "marcelo@teste.com.br",
+      "clientPhoneNumbers": [
         {
-            "id": 1,
-            "clientName": "Marcelo Cezario",
-            "clientEmail": "marcelo@teste.com.br",
-            "clientPhoneNumbers": [
-                {
-                    "ddd": "041",
-                    "number": "888881111"
-                }
-            ],
-            "works":[
-                {
-                    "value": 25.0,
-                    "moment": "2021-12-08T20:30:00Z",
-                    "work": {
-                        "id": 2
-                    }
-                }    
-            ],
-            "confirmed": true,
-            "active": true,
-            "reservationStatus": "SCHEDULED_CLIENT"
-        },
-        {
-            "id": 2,
-            "clientName": "Matheus Garret",
-            "clientEmail": "matheus@teste.com.br",
-            "clientPhoneNumbers": [
-                {
-                    "ddd": "041",
-                    "number": "888881111"
-                }
-            ],
-            "works":[
-                {
-                    "value": 25.0,
-                    "moment": "2021-12-08T20:00:00Z",
-                    "work": {
-                        "id": 2
-                    }
-                }    
-            ],
-            "confirmed": false,
-            "active": true,
-            "reservationStatus": "SCHEDULED_CLIENT"
-        },
-        {
-            "id": 3,
-            "clientName": "Joazinho Testando",
-            "clientEmail": "joaozinho@teste.com.br",
-            "clientPhoneNumbers": [
-                {
-                    "ddd": "041",
-                    "number": "888881111"
-                }
-            ],
-            "works":[
-                {
-                    "value": 60.0,
-                    "moment": "2021-12-08T19:00:00Z",
-                    "work": {
-                        "id": 4
-                    }
-                }    
-            ],
-            "confirmed": true,
-            "active": true,
-            "reservationStatus": "SCHEDULED_ESTABLISHMENT"
-        },
-        {
-            "id": 4,
-            "clientName": "Zezinho Usuario",
-            "clientEmail": "zezinho@teste.com.br",
-            "clientPhoneNumbers": [
-                {
-                    "ddd": "041",
-                    "number": "888881111"
-                }
-            ],
-            "works":[
-                {
-                    "value": 60.0,
-                    "moment": "2021-12-08T18:00:00Z",
-                    "work": {
-                        "id": 4
-                    }
-                }    
-            ],
-            "confirmed": true,
-            "active": false,
-            "reservationStatus": "SCHEDULED_ESTABLISHMENT"
+          "ddd": "041",
+          "number": "888881111"
         }
-    ]
-    
+      ],
+      "works": [
+        {
+          "value": 25.0,
+          "moment": "2021-12-08T20:30:00Z",
+          "work": {
+            "id": 2
+          }
+        }
+      ],
+      "confirmed": true,
+      "active": true,
+      "reservationStatus": "SCHEDULED_CLIENT"
+    },
+    {
+      "id": 2,
+      "clientName": "Matheus Garret",
+      "clientEmail": "matheus@teste.com.br",
+      "clientPhoneNumbers": [
+        {
+          "ddd": "041",
+          "number": "888881111"
+        }
+      ],
+      "works": [
+        {
+          "value": 25.0,
+          "moment": "2021-12-08T20:00:00Z",
+          "work": {
+            "id": 2
+          }
+        }
+      ],
+      "confirmed": false,
+      "active": true,
+      "reservationStatus": "SCHEDULED_CLIENT"
+    },
+    {
+      "id": 3,
+      "clientName": "Joazinho Testando",
+      "clientEmail": "joaozinho@teste.com.br",
+      "clientPhoneNumbers": [
+        {
+          "ddd": "041",
+          "number": "888881111"
+        }
+      ],
+      "works": [
+        {
+          "value": 60.0,
+          "moment": "2021-12-08T19:00:00Z",
+          "work": {
+            "id": 4
+          }
+        }
+      ],
+      "confirmed": true,
+      "active": true,
+      "reservationStatus": "SCHEDULED_ESTABLISHMENT"
+    },
+    {
+      "id": 4,
+      "clientName": "Zezinho Usuario",
+      "clientEmail": "zezinho@teste.com.br",
+      "clientPhoneNumbers": [
+        {
+          "ddd": "041",
+          "number": "888881111"
+        }
+      ],
+      "works": [
+        {
+          "value": 60.0,
+          "moment": "2021-12-08T18:00:00Z",
+          "work": {
+            "id": 4
+          }
+        }
+      ],
+      "confirmed": true,
+      "active": false,
+      "reservationStatus": "SCHEDULED_ESTABLISHMENT"
+    }
+  ]
 }
