@@ -1,352 +1,778 @@
 {
-  "login": [
+  "brands": [
     {
       "id": 1,
-      "username": "teste@teste.com.br",
-      "password": "teste",
-      "authorization": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZXN0ZUB0ZXN0ZS5jb20uYnIiLCJlc3RhYmxpc2htZW50SWQiOjF9.tjy86GVb_5tnvM4CyxDTcNWtd5mPgB1c6vA2NkaBvW1cUXQF3rWZXmm5wvurkawNQMpp5vTvbBbumEbAOhnd1g"
+      "name": "Daf",
+      "imageUrl": "assets/brands/daf.svg",
+      "active": true,
+      "createdAt": "2023-04-20T22:08:00Z",
+      "updatedAt": "2023-04-20T22:08:00Z"
     },
     {
       "id": 2,
-      "username": "admin@mhc.dev.br",
-      "password": "2021@admindev",
-      "authorization": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbkBtaGMuZGV2LnIiLCJlc3RhYmxpc2htZW50SWQiOjJ9.5fXRBLO66oSiFfuM3SbMd_jBhECGgsmbwXKjIL7BjfDQauk3LfFLLBEA1ZJ_CYu8ddc4L0A_jO3CLUM7o-WwmA"
+      "name": "Ford",
+      "imageUrl": "assets/brands/ford.svg",
+      "active": true,
+      "createdAt": "2023-04-20T22:08:00Z",
+      "updatedAt": "2023-04-20T22:08:00Z"
+    },
+    {
+      "id": 3,
+      "name": "Iveco",
+      "imageUrl": "assets/brands/iveco.svg",
+      "active": true,
+      "createdAt": "2023-04-20T22:08:00Z",
+      "updatedAt": "2023-04-20T22:08:00Z"
+    },
+    {
+      "id": 4,
+      "name": "Mercedes",
+      "imageUrl": "assets/brands/mercedes.svg",
+      "active": true,
+      "createdAt": "2023-04-20T22:08:00Z",
+      "updatedAt": "2023-04-20T22:08:00Z"
+    },
+    {
+      "id": 5,
+      "name": "Scania",
+      "imageUrl": "assets/brands/scania.svg",
+      "active": true,
+      "createdAt": "2023-04-20T22:08:00Z",
+      "updatedAt": "2023-04-20T22:08:00Z"
+    },
+    {
+      "id": 6,
+      "name": "Volkswagen",
+      "imageUrl": "assets/brands/volkwagen.svg",
+      "active": true,
+      "createdAt": "2023-04-20T22:08:00Z",
+      "updatedAt": "2023-04-20T22:08:00Z"
+    },
+    {
+      "id": 7,
+      "name": "Volvo",
+      "imageUrl": "assets/brands/volvo.svg",
+      "active": true,
+      "createdAt": "2023-04-20T22:08:00Z",
+      "updatedAt": "2023-04-20T22:08:00Z"
+    },
+    {
+      "id": 8,
+      "name": "Randon",
+      "imageUrl": "assets/brands/randon.svg",
+      "active": true,
+      "createdAt": "2023-04-20T22:08:00Z",
+      "updatedAt": "2023-04-20T22:08:00Z"
     }
   ],
-  "users": [
+  "vehicle-models": [
     {
       "id": 1,
-      "username": "teste@teste.com.br",
-      "password": "123456",
-      "profiles": [
-        {
-          "profile": "BASIC_USER"
-        },
-        {
-          "profile": "ESTABLISHMENT"
-        }
-      ],
-      "establishment": {
+      "name": "G-340",
+      "brand": {
+        "id": 5
+      },
+      "active": true,
+      "createdAt": "2023-04-20T23:39:00Z",
+      "updatedAt": "2023-04-20T23:39:00Z"
+    },
+    {
+      "id": 2,
+      "name": "G-360",
+      "brand": {
+        "id": 5
+      },
+      "active": true,
+      "createdAt": "2023-04-20T23:39:00Z",
+      "updatedAt": "2023-04-20T23:39:00Z"
+    },
+    {
+      "id": 3,
+      "name": "G-410",
+      "brand": {
+        "id": 5
+      },
+      "active": true,
+      "createdAt": "2023-04-20T23:39:00Z",
+      "updatedAt": "2023-04-20T23:39:00Z"
+    },
+    {
+      "id": 4,
+      "name": "G-460",
+      "brand": {
+        "id": 5
+      },
+      "active": true,
+      "createdAt": "2023-04-20T23:39:00Z",
+      "updatedAt": "2023-04-20T23:39:00Z"
+    },
+    {
+      "id": 5,
+      "name": "R-460",
+      "brand": {
+        "id": 5
+      },
+      "active": true,
+      "createdAt": "2023-04-20T23:39:00Z",
+      "updatedAt": "2023-04-20T23:39:00Z"
+    },
+    {
+      "id": 6,
+      "name": "R-500",
+      "brand": {
+        "id": 5
+      },
+      "active": true,
+      "createdAt": "2023-04-20T23:39:00Z",
+      "updatedAt": "2023-04-20T23:39:00Z"
+    },
+    {
+      "id": 7,
+      "name": "S-770",
+      "brand": {
+        "id": 5
+      },
+      "active": true,
+      "createdAt": "2023-04-20T23:39:00Z",
+      "updatedAt": "2023-04-20T23:39:00Z"
+    },
+    {
+      "id": 8,
+      "name": "FH-420",
+      "brand": {
+        "id": 7
+      },
+      "active": true,
+      "createdAt": "2023-04-20T23:39:00Z",
+      "updatedAt": "2023-04-20T23:39:00Z"
+    },
+    {
+      "id": 9,
+      "name": "FH-460",
+      "brand": {
+        "id": 7
+      },
+      "active": true,
+      "createdAt": "2023-04-20T23:39:00Z",
+      "updatedAt": "2023-04-20T23:39:00Z"
+    },
+    {
+      "id": 10,
+      "name": "FH-500",
+      "brand": {
+        "id": 7
+      },
+      "active": true,
+      "createdAt": "2023-04-20T23:39:00Z",
+      "updatedAt": "2023-04-20T23:39:00Z"
+    },
+    {
+      "id": 11,
+      "name": "FH-540",
+      "brand": {
+        "id": 7
+      },
+      "active": true,
+      "createdAt": "2023-04-20T23:39:00Z",
+      "updatedAt": "2023-04-20T23:39:00Z"
+    },
+    {
+      "id": 12,
+      "name": "FM",
+      "brand": {
+        "id": 7
+      },
+      "active": true,
+      "createdAt": "2023-04-20T23:39:00Z",
+      "updatedAt": "2023-04-20T23:39:00Z"
+    },
+    {
+      "id": 13,
+      "name": "FMX",
+      "brand": {
+        "id": 7
+      },
+      "active": true,
+      "createdAt": "2023-04-20T23:39:00Z",
+      "updatedAt": "2023-04-20T23:39:00Z"
+    },
+    {
+      "id": 14,
+      "name": "VM",
+      "brand": {
+        "id": 7
+      },
+      "active": true,
+      "createdAt": "2023-04-20T23:39:00Z",
+      "updatedAt": "2023-04-20T23:39:00Z"
+    },
+    {
+      "id": 15,
+      "name": "Semi-reboque 3 eixos",
+      "brand": {
+        "id": 8
+      },
+      "active": true,
+      "createdAt": "2023-04-20T23:39:00Z",
+      "updatedAt": "2023-04-20T23:39:00Z"
+    },
+    {
+      "id": 16,
+      "name": "Semi-reboque bitrem dianteiro",
+      "brand": {
+        "id": 8
+      },
+      "active": true,
+      "createdAt": "2023-04-20T23:39:00Z",
+      "updatedAt": "2023-04-20T23:39:00Z"
+    },
+    {
+      "id": 17,
+      "name": "Semi-reboque bitrem traseiro",
+      "brand": {
+        "id": 8
+      },
+      "active": true,
+      "createdAt": "2023-04-20T23:39:00Z",
+      "updatedAt": "2023-04-20T23:39:00Z"
+    }
+  ],
+  "vehicles": [
+    {
+      "id": 1,
+      "licensePlate": "ABC-0D12",
+      "brand": {
+        "id": 7
+      },
+      "model": {
+        "id": 8
+      },
+      "active": true,
+      "createdAt": "2023-04-20T23:39:00Z",
+      "updatedAt": "2023-04-20T23:39:00Z"
+    },
+    {
+      "id": 2,
+      "licensePlate": "AFG-3H45",
+      "brand": {
+        "id": 7
+      },
+      "model": {
+        "id": 8
+      },
+      "active": true,
+      "createdAt": "2023-04-20T23:39:00Z",
+      "updatedAt": "2023-04-20T23:39:00Z"
+    },
+    {
+      "id": 3,
+      "licensePlate": "AHI-6J78",
+      "brand": {
+        "id": 7
+      },
+      "model": {
+        "id": 8
+      },
+      "active": true,
+      "createdAt": "2023-04-20T23:39:00Z",
+      "updatedAt": "2023-04-20T23:39:00Z"
+    },
+    {
+      "id": 4,
+      "licensePlate": "AAA-0A00",
+      "brand": {
+        "id": 8
+      },
+      "model": {
+        "id": 9
+      },
+      "active": true,
+      "createdAt": "2023-04-20T23:39:00Z",
+      "updatedAt": "2023-04-20T23:39:00Z"
+    },
+    {
+      "id": 5,
+      "licensePlate": "BBB-1B11",
+      "brand": {
+        "id": 8
+      },
+      "model": {
+        "id": 9
+      },
+      "active": true,
+      "createdAt": "2023-04-20T23:39:00Z",
+      "updatedAt": "2023-04-20T23:39:00Z"
+    },
+    {
+      "id": 6,
+      "licensePlate": "ABC-1A11",
+      "brand": {
+        "id": 8
+      },
+      "model": {
+        "id": 9
+      },
+      "active": true,
+      "createdAt": "2023-04-20T23:39:00Z",
+      "updatedAt": "2023-04-20T23:39:00Z"
+    }
+  ],
+  "tractor-trailers": [
+    {
+      "id": 1,
+      "tractor": {
         "id": 1
-      }
-    }
-  ],
-  "establishments": [
-    {
-      "id": 1,
-      "name": "Estabelecimento teste2222",
-      "cpfOrCnpj": "12345678999",
-      "email": "teste@teste.com.br",
-      "postalCode": "83420-000",
-      "streetName": "R. Rio Capivari Mirim",
-      "streetNumber": "83",
-      "district": "Centro",
-      "friendlyUrl": "link-estabelecimento-teste",
-      "imageUrl": "assets/img/test-profile.jpg",
-      "city": {
-        "id": "1",
-        "name": "Piraquara",
-        "state": {
-          "id": 1,
-          "name": "Paraná",
-          "abbreviation": "PR"
-        }
       },
-      "phoneNumbers": [
-        {
-          "ddd": "041",
-          "number": "999999999"
-        },
-        {
-          "ddd": "041",
-          "number": "988887654"
-        }
-      ],
-      "socialMedia": [
-        {
-          "url": "facebook.com/mhcezario",
-          "socialMedia": {
-            "id": 1,
-            "name": "Facebook",
-            "iconUrl": ""
-          }
-        }
-      ],
-      "scheduleSetting": {
-        "id": 1,
-        "openSchedule": true,
-        "scheduleBreak": 30,
-        "officeHours": [
-          {
-            "id": 1,
-            "startTime": "09:00",
-            "endTime": "12:00",
-            "dayOfWeek": "MONDAY"
-          },
-          {
-            "id": 2,
-            "startTime": "13:00",
-            "endTime": "18:00",
-            "dayOfWeek": "MONDAY"
-          },
-          {
-            "id": 3,
-            "startTime": "09:00",
-            "endTime": "12:00",
-            "dayOfWeek": "TUESDAY"
-          },
-          {
-            "id": 4,
-            "startTime": "13:00",
-            "endTime": "18:00",
-            "dayOfWeek": "TUESDAY"
-          },
-          {
-            "id": 5,
-            "startTime": "09:00",
-            "endTime": "12:00",
-            "dayOfWeek": "WEDNESDAY"
-          },
-          {
-            "id": 6,
-            "startTime": "13:00",
-            "endTime": "18:00",
-            "dayOfWeek": "WEDNESDAY"
-          },
-          {
-            "id": 7,
-            "startTime": "09:00",
-            "endTime": "12:00",
-            "dayOfWeek": "THURSDAY"
-          },
-          {
-            "id": 8,
-            "startTime": "13:00",
-            "endTime": "18:00",
-            "dayOfWeek": "THURSDAY"
-          },
-          {
-            "id": 9,
-            "startTime": "09:00",
-            "endTime": "12:00",
-            "dayOfWeek": "FRIDAY"
-          },
-          {
-            "id": 10,
-            "startTime": "13:00",
-            "endTime": "17:00",
-            "dayOfWeek": "FRIDAY"
-          },
-          {
-            "id": 11,
-            "startTime": "08:00",
-            "endTime": "11:00",
-            "dayOfWeek": "SATURDAY"
-          }
-        ],
-        "holidays": [
-          {
-            "date": "01/01/2022"
-          },
-          {
-            "date": "01/03/2022"
-          },
-          {
-            "date": "15/04/2022"
-          },
-          {
-            "date": "21/04/2022"
-          },
-          {
-            "date": "01/05/2022"
-          },
-          {
-            "date": "16/06/2022"
-          },
-          {
-            "date": "07/09/2022"
-          },
-          {
-            "date": "12/10/2022"
-          },
-          {
-            "date": "02/11/2022"
-          },
-          {
-            "date": "15/11/2022"
-          },
-          {
-            "date": "24/12/2022"
-          },
-          {
-            "date": "25/12/2022"
-          },
-          {
-            "date": "31/12/2022"
-          }
-        ]
-      },
-      "works": [
-        {
-          "id": 1
-        },
-        {
-          "id": 2
-        },
-        {
-          "id": 3
-        },
+      "trailers": [
         {
           "id": 4
-        },
+        }
+      ],
+      "active": true,
+      "createdAt": "2023-04-20T23:39:00Z",
+      "updatedAt": "2023-04-20T23:39:00Z"
+    },
+    {
+      "id": 2,
+      "tractor": {
+        "id": 2
+      },
+      "trailers": [
         {
           "id": 5
         },
         {
           "id": 6
         }
-      ]
-    }
-  ],
-  "works": [
-    {
-      "id": 1,
-      "name": "Ducha molhada",
-      "value": 20.0,
-      "executionTime": 15,
-      "establishment": {
-        "id": 1
-      }
-    },
-    {
-      "id": 2,
-      "name": "Ducha + pretinho",
-      "value": 25.0,
-      "executionTime": 20,
-      "establishment": {
-        "id": 1
-      }
+      ],
+      "active": true,
+      "createdAt": "2023-04-20T23:39:00Z",
+      "updatedAt": "2023-04-20T23:39:00Z"
     },
     {
       "id": 3,
-      "name": "Limpeza completa",
-      "value": 35.0,
-      "executionTime": 40,
-      "establishment": {
-        "id": 1
-      }
+      "tractor": {
+        "id": 3
+      },
+      "trailers": [
+        {
+          "id": 7
+        },
+        {
+          "id": 8
+        }
+      ],
+      "active": true,
+      "createdAt": "2023-04-20T23:39:00Z",
+      "updatedAt": "2023-04-20T23:39:00Z"
+    }
+  ],
+  "drivers": [
+    {
+      "id": 1,
+      "name": "José da Silva",
+      "nickname": "Zé da Silva",
+      "active": true,
+      "createdAt": "2023-04-20T22:08:00Z",
+      "updatedAt": "2023-04-20T22:08:00Z"
+    },
+    {
+      "id": 2,
+      "name": "João Pereira",
+      "nickname": "Jão Cabeça",
+      "active": true,
+      "createdAt": "2023-04-20T22:08:00Z",
+      "updatedAt": "2023-04-20T22:08:00Z"
+    },
+    {
+      "id": 3,
+      "name": "Joaquim Teixeira",
+      "nickname": "Joaquin Delrey",
+      "active": true,
+      "createdAt": "2023-04-20T22:08:00Z",
+      "updatedAt": "2023-04-20T22:08:00Z"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Frete",
+      "imageUrl": "",
+      "iconColor": "#F5F5F5",
+      "categoryType": "CREDIT",
+      "active": true,
+      "createdAt": "2023-04-20T22:08:00Z",
+      "updatedAt": "2023-04-20T22:08:00Z"
+    },
+    {
+      "id": 2,
+      "name": "Comissão Motorista",
+      "imageUrl": "",
+      "iconColor": "#CD3333",
+      "categoryType": "DEBIT",
+      "active": true,
+      "createdAt": "2023-04-20T22:08:00Z",
+      "updatedAt": "2023-04-20T22:08:00Z"
+    },
+    {
+      "id": 3,
+      "name": "Borracharia",
+      "imageUrl": "",
+      "iconColor": "#3339CD",
+      "categoryType": "DEBIT",
+      "active": true,
+      "createdAt": "2023-04-20T22:08:00Z",
+      "updatedAt": "2023-04-20T22:08:00Z"
     },
     {
       "id": 4,
-      "name": "Limpeza completa + cera",
-      "value": 60.0,
-      "executionTime": 60,
-      "establishment": {
-        "id": 1
-      }
+      "name": "Abastecimento",
+      "imageUrl": "",
+      "iconColor": "#33CD55",
+      "categoryType": "DEBIT",
+      "active": true,
+      "createdAt": "2023-04-20T22:08:00Z",
+      "updatedAt": "2023-04-20T22:08:00Z"
+    }
+  ],
+  "entries": [
+    {
+      "id": 1,
+      "localDate": "2023-03-20",
+      "amount": 8000.0,
+      "notes": "",
+      "category": {
+        "id": 1,
+        "name": "Frete",
+        "imageUrl": "",
+        "iconColor": "#F5F5F5",
+        "categoryType": "CREDIT",
+        "active": true,
+        "createdAt": "2023-04-20T22:08:00Z",
+        "updatedAt": "2023-04-20T22:08:00Z"
+      },
+      "active": true,
+      "createdAt": "2023-04-20T23:39:00Z",
+      "updatedAt": "2023-04-20T23:39:00Z"
+    },
+    {
+      "id": 2,
+      "localDate": "2023-03-29",
+      "amount": -960.0,
+      "notes": "",
+      "category": {
+        "id": 2,
+        "name": "Comissão Motorista",
+        "imageUrl": "",
+        "iconColor": "#CD3333",
+        "categoryType": "DEBIT",
+        "active": true,
+        "createdAt": "2023-04-20T22:08:00Z",
+        "updatedAt": "2023-04-20T22:08:00Z"
+      },
+      "active": true,
+      "createdAt": "2023-04-20T23:39:00Z",
+      "updatedAt": "2023-04-20T23:39:00Z"
+    },
+    {
+      "id": 3,
+      "localDate": "2023-03-28",
+      "amount": -500.0,
+      "notes": "",
+      "category": {
+        "id": 3,
+        "name": "Borracharia",
+        "imageUrl": "",
+        "iconColor": "#3339CD",
+        "categoryType": "DEBIT",
+        "active": true,
+        "createdAt": "2023-04-20T22:08:00Z",
+        "updatedAt": "2023-04-20T22:08:00Z"
+      },
+      "active": true,
+      "createdAt": "2023-04-20T23:39:00Z",
+      "updatedAt": "2023-04-20T23:39:00Z"
+    },
+    {
+      "id": 4,
+      "localDate": "2023-03-28",
+      "amount": -2000.0,
+      "notes": "",
+      "category": {
+        "id": 4,
+        "name": "Abastecimento",
+        "imageUrl": "",
+        "iconColor": "#33CD55",
+        "categoryType": "DEBIT",
+        "active": true,
+        "createdAt": "2023-04-20T22:08:00Z",
+        "updatedAt": "2023-04-20T22:08:00Z"
+      },
+      "active": true,
+      "createdAt": "2023-04-20T23:39:00Z",
+      "updatedAt": "2023-04-20T23:39:00Z"
     },
     {
       "id": 5,
-      "name": "Higienização bancos",
-      "value": 80.0,
-      "executionTime": 120,
-      "establishment": {
-        "id": 1
-      }
+      "localDate": "2023-02-20",
+      "amount": 6000.0,
+      "notes": "",
+      "category": {
+        "id": 1,
+        "name": "Frete",
+        "imageUrl": "",
+        "iconColor": "#F5F5F5",
+        "categoryType": "CREDIT",
+        "active": true,
+        "createdAt": "2023-04-20T22:08:00Z",
+        "updatedAt": "2023-04-20T22:08:00Z"
+      },
+      "active": true,
+      "createdAt": "2023-04-20T23:39:00Z",
+      "updatedAt": "2023-04-20T23:39:00Z"
+    },
+    {
+      "id": 6,
+      "localDate": "2023-02-19",
+      "amount": -720.0,
+      "notes": "",
+      "category": {
+        "id": 2,
+        "name": "Comissão Motorista",
+        "imageUrl": "",
+        "iconColor": "#CD3333",
+        "categoryType": "DEBIT",
+        "active": true,
+        "createdAt": "2023-04-20T22:08:00Z",
+        "updatedAt": "2023-04-20T22:08:00Z"
+      },
+      "active": true,
+      "createdAt": "2023-04-20T23:39:00Z",
+      "updatedAt": "2023-04-20T23:39:00Z"
+    },
+    {
+      "id": 7,
+      "localDate": "2023-02-19",
+      "amount": -500.0,
+      "notes": "",
+      "category": {
+        "id": 3,
+        "name": "Borracharia",
+        "imageUrl": "",
+        "iconColor": "#3339CD",
+        "categoryType": "DEBIT",
+        "active": true,
+        "createdAt": "2023-04-20T22:08:00Z",
+        "updatedAt": "2023-04-20T22:08:00Z"
+      },
+      "active": true,
+      "createdAt": "2023-04-20T23:39:00Z",
+      "updatedAt": "2023-04-20T23:39:00Z"
+    },
+    {
+      "id": 8,
+      "localDate": "2023-02-19",
+      "amount": -2000.0,
+      "notes": "",
+      "category": {
+        "id": 4,
+        "name": "Abastecimento",
+        "imageUrl": "",
+        "iconColor": "#33CD55",
+        "categoryType": "DEBIT",
+        "active": true,
+        "createdAt": "2023-04-20T22:08:00Z",
+        "updatedAt": "2023-04-20T22:08:00Z"
+      },
+      "active": true,
+      "createdAt": "2023-04-20T23:39:00Z",
+      "updatedAt": "2023-04-20T23:39:00Z"
     }
   ],
-  "reservations": [
+  "accountabilities": [
     {
       "id": 1,
-      "clientName": "Marcelo Cezario",
-      "clientEmail": "marcelo@teste.com.br",
-      "clientPhoneNumbers": [
+      "balance": 4540.0,
+      "notes": "",
+      "entries": [
         {
-          "ddd": "041",
-          "number": "888881111"
+          "id": 1,
+          "localDate": "2023-03-20",
+          "amount": 8000.0,
+          "notes": "",
+          "category": {
+            "id": 1,
+            "name": "Frete",
+            "imageUrl": "",
+            "iconColor": "#F5F5F5",
+            "categoryType": "CREDIT",
+            "active": true,
+            "createdAt": "2023-04-20T22:08:00Z",
+            "updatedAt": "2023-04-20T22:08:00Z"
+          },
+          "active": true,
+          "createdAt": "2023-04-20T23:39:00Z",
+          "updatedAt": "2023-04-20T23:39:00Z"
+        },
+        {
+          "id": 2,
+          "localDate": "2023-03-29",
+          "amount": -960.0,
+          "notes": "",
+          "category": {
+            "id": 2,
+            "name": "Comissão Motorista",
+            "imageUrl": "",
+            "iconColor": "#CD3333",
+            "categoryType": "DEBIT",
+            "active": true,
+            "createdAt": "2023-04-20T22:08:00Z",
+            "updatedAt": "2023-04-20T22:08:00Z"
+          },
+          "active": true,
+          "createdAt": "2023-04-20T23:39:00Z",
+          "updatedAt": "2023-04-20T23:39:00Z"
+        },
+        {
+          "id": 3,
+          "localDate": "2023-03-28",
+          "amount": -500.0,
+          "notes": "",
+          "category": {
+            "id": 3,
+            "name": "Borracharia",
+            "imageUrl": "",
+            "iconColor": "#3339CD",
+            "categoryType": "DEBIT",
+            "active": true,
+            "createdAt": "2023-04-20T22:08:00Z",
+            "updatedAt": "2023-04-20T22:08:00Z"
+          },
+          "active": true,
+          "createdAt": "2023-04-20T23:39:00Z",
+          "updatedAt": "2023-04-20T23:39:00Z"
+        },
+        {
+          "id": 4,
+          "localDate": "2023-03-28",
+          "amount": -2000.0,
+          "notes": "",
+          "category": {
+            "id": 4,
+            "name": "Abastecimento",
+            "imageUrl": "",
+            "iconColor": "#33CD55",
+            "categoryType": "DEBIT",
+            "active": true,
+            "createdAt": "2023-04-20T22:08:00Z",
+            "updatedAt": "2023-04-20T22:08:00Z"
+          },
+          "active": true,
+          "createdAt": "2023-04-20T23:39:00Z",
+          "updatedAt": "2023-04-20T23:39:00Z"
         }
       ],
-      "works": [
-        {
-          "value": 25.0,
-          "moment": "2021-12-08T20:30:00Z",
-          "work": {
-            "id": 2
-          }
-        }
-      ],
-      "confirmed": true,
+      "driver": {
+        "id": 1
+      },
+      "tractorTrailer": {
+        "id": 2
+      },
       "active": true,
-      "reservationStatus": "SCHEDULED_CLIENT"
+      "createdAt": "2023-04-20T22:08:00Z",
+      "updatedAt": "2023-04-20T22:08:00Z"
     },
     {
       "id": 2,
-      "clientName": "Matheus Garret",
-      "clientEmail": "matheus@teste.com.br",
-      "clientPhoneNumbers": [
+      "balance": 2780.0,
+      "notes": "",
+      "entries": [
         {
-          "ddd": "041",
-          "number": "888881111"
+          "id": 5,
+          "localDate": "2023-02-20",
+          "amount": 6000.0,
+          "notes": "",
+          "category": {
+            "id": 1,
+            "name": "Frete",
+            "imageUrl": "",
+            "iconColor": "#F5F5F5",
+            "categoryType": "CREDIT",
+            "active": true,
+            "createdAt": "2023-04-20T22:08:00Z",
+            "updatedAt": "2023-04-20T22:08:00Z"
+          },
+          "active": true,
+          "createdAt": "2023-04-20T23:39:00Z",
+          "updatedAt": "2023-04-20T23:39:00Z"
+        },
+        {
+          "id": 6,
+          "localDate": "2023-02-19",
+          "amount": -720.0,
+          "notes": "",
+          "category": {
+            "id": 2,
+            "name": "Comissão Motorista",
+            "imageUrl": "",
+            "iconColor": "#CD3333",
+            "categoryType": "DEBIT",
+            "active": true,
+            "createdAt": "2023-04-20T22:08:00Z",
+            "updatedAt": "2023-04-20T22:08:00Z"
+          },
+          "active": true,
+          "createdAt": "2023-04-20T23:39:00Z",
+          "updatedAt": "2023-04-20T23:39:00Z"
+        },
+        {
+          "id": 7,
+          "localDate": "2023-02-19",
+          "amount": -500.0,
+          "notes": "",
+          "category": {
+            "id": 3,
+            "name": "Borracharia",
+            "imageUrl": "",
+            "iconColor": "#3339CD",
+            "categoryType": "DEBIT",
+            "active": true,
+            "createdAt": "2023-04-20T22:08:00Z",
+            "updatedAt": "2023-04-20T22:08:00Z"
+          },
+          "active": true,
+          "createdAt": "2023-04-20T23:39:00Z",
+          "updatedAt": "2023-04-20T23:39:00Z"
+        },
+        {
+          "id": 8,
+          "localDate": "2023-02-19",
+          "amount": -2000.0,
+          "notes": "",
+          "category": {
+            "id": 4,
+            "name": "Abastecimento",
+            "imageUrl": "",
+            "iconColor": "#33CD55",
+            "categoryType": "DEBIT",
+            "active": true,
+            "createdAt": "2023-04-20T22:08:00Z",
+            "updatedAt": "2023-04-20T22:08:00Z"
+          },
+          "active": true,
+          "createdAt": "2023-04-20T23:39:00Z",
+          "updatedAt": "2023-04-20T23:39:00Z"
         }
       ],
-      "works": [
-        {
-          "value": 25.0,
-          "moment": "2021-12-08T20:00:00Z",
-          "work": {
-            "id": 2
-          }
-        }
-      ],
-      "confirmed": false,
+      "driver": {
+        "id": 2
+      },
+      "tractorTrailer": {
+        "id": 1
+      },
       "active": true,
-      "reservationStatus": "SCHEDULED_CLIENT"
-    },
-    {
-      "id": 3,
-      "clientName": "Joazinho Testando",
-      "clientEmail": "joaozinho@teste.com.br",
-      "clientPhoneNumbers": [
-        {
-          "ddd": "041",
-          "number": "888881111"
-        }
-      ],
-      "works": [
-        {
-          "value": 60.0,
-          "moment": "2021-12-08T19:00:00Z",
-          "work": {
-            "id": 4
-          }
-        }
-      ],
-      "confirmed": true,
-      "active": true,
-      "reservationStatus": "SCHEDULED_ESTABLISHMENT"
-    },
-    {
-      "id": 4,
-      "clientName": "Zezinho Usuario",
-      "clientEmail": "zezinho@teste.com.br",
-      "clientPhoneNumbers": [
-        {
-          "ddd": "041",
-          "number": "888881111"
-        }
-      ],
-      "works": [
-        {
-          "value": 60.0,
-          "moment": "2021-12-08T18:00:00Z",
-          "work": {
-            "id": 4
-          }
-        }
-      ],
-      "confirmed": true,
-      "active": false,
-      "reservationStatus": "SCHEDULED_ESTABLISHMENT"
+      "createdAt": "2023-04-20T22:08:00Z",
+      "updatedAt": "2023-04-20T22:08:00Z"
     }
   ]
 }
